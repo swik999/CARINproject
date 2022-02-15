@@ -15,6 +15,7 @@ public class Host {
                 if(map[col][row]== 0){
                     System.out.println("(col,row) = "+col+" "+row);
                     map[col][row]= 1 ;
+                    Virusleft++;
                     break;
                 }else {
                     col++;
@@ -38,6 +39,7 @@ public class Host {
         for(int i = 0;i<10;i++){
             A.Spaw() ;
             A.PrintMap();
+            System.out.println(A.Virusleft);
         }
     }
 }
